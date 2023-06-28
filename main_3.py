@@ -1,6 +1,6 @@
 n = int(input("Введите количество элементов в массиве: "))
 array = []
-for _ in range(n):
+for i in range(n):
     num = int(input("Введите число: "))
     array.append(num)
 x = int(input("Введите число X: "))
@@ -27,9 +27,9 @@ closest = None
 min_diff = float('inf')
 for num in array:
     diff = abs(num - x)
-    if diff < min_diff:
-        min_diff = diff
-        closest = num
-
-# Вывод результата
-print(f"Самый близкий элемент к числу {x} в массиве: {closest}")
+#     if diff < min_diff:
+#         min_diff = diff
+#         closest = num
+#
+# # Вывод результата
+# print(f"Самый близкий элемент к числу {x} в массиве: {closest}")
