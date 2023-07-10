@@ -18,14 +18,15 @@ if rhythm:
 else:
     print("Пам парам")
 ######################################################################################################################
-def print_table(operation, num_rows=4, num_columns=4):
-    for i in range(1, num_rows+1):
-        for j in range(1, num_columns+1):
+def print_operation_table(operation, num_rows=6, num_columns=6):
+    for i in range(1, num_rows + 1):
+        for j in range(1, num_columns + 1):
             result = operation(i, j)
             print(result, end="\t")
         print()
 
+
 def multiply(x, y):
     return x * y
 
-print_table(multiply)
+print_operation_table(multiply)
